@@ -28,7 +28,7 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroH1>WE ARE BRAINBOX INSIGHT </HeroH1>
                 <HeroP>
-                    We are here to develop your business with our creativity.
+                   Your business our creativity.
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup" onMouseEnter={onHover} 
