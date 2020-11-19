@@ -5,7 +5,7 @@ export const homeObjOne = {
     LightText: true,
     lightTextDesc: true,
     topLine: 'Premium Work',
-    headline: 'Let your dream project fullfill with us',
+    headline: 'Let your dream our skills combine togather!!',
     description: 'We provide A to Z solution for your business. Web-development, Android Application, POS System, Digital Marketing and what not? We providing everything you need',
     buttonLabel: 'Get Started',
     imgStart: false,
