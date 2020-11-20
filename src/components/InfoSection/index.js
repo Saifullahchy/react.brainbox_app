@@ -11,7 +11,7 @@ SubTitle,
 BtnWrap,
 ImgWrap,
 Img} from './InfoElements';
-import bgPic from '../../images/svg-1.svg'
+
 
 const InfoSection = ({LightBg, id, imgStart, topLine,LightText, headline, darkText, description, buttonLabel,img, alt, primary , dark, dark2}) => {
     return (
@@ -39,7 +39,8 @@ const InfoSection = ({LightBg, id, imgStart, topLine,LightText, headline, darkTe
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                               <Img src={bgPic} alt={alt}/>
+                               <Img Img = {img} alt={alt}/>
+                               {console.log(img)}
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
