@@ -10,10 +10,19 @@ Heading,
 SubTitle,
 BtnWrap,
 ImgWrap,
-Img} from './InfoElements';
+} from './InfoElements';
+import {ReactComponent as Img1} from "../../images/svg-1.svg";
+import {ReactComponent as Img2} from "../../images/svg-2.svg";
+import {ReactComponent as Img3} from "../../images/svg-1.svg";
 
 
-const InfoSection = ({LightBg, id, imgStart, topLine,LightText, headline, darkText, description, buttonLabel,img, alt, primary , dark, dark2}) => {
+const InfoSection = ({LightBg, id, imgStart, topLine,LightText, headline, darkText, description, buttonLabel,ImgComp, alt, primary , dark, dark2}) => {
+    const images = {
+        "about": <Img1/>,
+         "home": <Img2/>,
+         "service":<Img3/>
+    };
+    
     return (
         <>
             <InfoContainer LightBg={LightBg} id={id}>
@@ -39,8 +48,7 @@ const InfoSection = ({LightBg, id, imgStart, topLine,LightText, headline, darkTe
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                               <Img Img = {img} alt={alt}/>
-                               {console.log(img)}
+                               {images[id]}
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
